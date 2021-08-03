@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form | Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+        onload="if(submitted) {window.location='thanks.html';}"></iframe>
+    <form
+        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdZsbgMpgxaPNCOi0xbEEivgUdawJP5aIgPJZWZkIK8iMb5ug/formResponse"
+        method="POST" target="hidden_iframe" onsubmit="return validateForm(); ">
+        <div class="element">
+            <h1>Event Registration</h1>
+            <h5>Event Timing: January 32-33 2050</h5>
+            <h5>Event Address: 123, Alien Street, Elon Musk House, Planet Mars</h5>
+            <h5>Contact Us: (+123)123456789 or talkingtothemars@gmailmars.com</h5>
+            <h6 class="required">*Required</h6>
+        </div>
+        <div class="element" id="name_element">
+            <span>Name <span class="required">*</span></span>
+            <input type="text" name="entry.1123556591" placeholder="Your answer" id="name">
+            <div class="fill_data">
+                <img src="https://img.icons8.com/ios-glyphs/30/000000/high-importance.png"/>
+                <span class="required"> Please fill correct Data</span>
+            </div>
+        </div>
+        <div class="element" id="phone_element">
+            <span>Phone <span class="required">*</span></span>
+            <input name="entry.1326114229" type="tel" id="phone" placeholder="Your answer"></input>
+            <div class="fill_data">
+                <img src="https://img.icons8.com/ios-glyphs/30/000000/high-importance.png" />
+                <span class="required"> Please fill correct Data</span>
+            </div>
+        </div>
+        <div class="element" id="email_element">
+            <span>Email Address <span class="required">*</span></span>
+            <input type="text" name="emailAddress" id="mail" placeholder="Your answer">
+            <div class="fill_data">
+                <img src="https://img.icons8.com/ios-glyphs/30/000000/high-importance.png" />
+                <span class="required"> Please fill correct Data</span>
+            </div>
+        </div>
+        <div class="element" id="address_element">
+            <span>Address <span class="required">*</span></span>
+            <input name="entry.1963212419" type="text" placeholder="Your answer" id="address"></input>
+            <div class="fill_data">
+                <img src="https://img.icons8.com/ios-glyphs/30/000000/high-importance.png" />
+                <span class="required"> Please fill correct Data</span>
+            </div>
+        </div>
+        <div class="btn">
+            <button id="submit-btn" type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+<script src="script.js">var submitted = false;</script>
+
+</html>
